@@ -13,5 +13,4 @@ eval "$(starship init zsh)"
 
 export VIMINIT="source ~/.config/vim/.vimrc"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source "$HOME/.config/zsh/plugins/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
-
+# source "$HOME/.config/zsh/plugins/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
