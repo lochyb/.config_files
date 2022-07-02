@@ -40,6 +40,7 @@ set encoding=utf-8 " encoding used for displaying file
 " set ruler " show the cursor position all the time
 set showmatch " highlight matching braces
 " set showmode " show insert/replace/visual mode
+set relativenumber
 
 " write settings
 set confirm " confirm :q in case of unsaved changes
@@ -68,8 +69,14 @@ syntax enable " enable syntax highlighting
 
 "general key mappings
 
+let mapleader = ","
+noremap <leader>w :w<cr>
+
 "ESCAPE KEYS
 inoremap jk <ESC>
 
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
+map <leader>x :NERDTreeToggle<CR>
+map <leader>n :noh<CR>
+let NERDTreeShowHidden=1
